@@ -1,9 +1,9 @@
 # raw2dng
 Linux utility for converting raw photo files into DNG, TIFF and JPEG formats.
 
-While this will happily convert most raw formats, it is especially optimised 
-for Sony's A7 (ILCE-7) camera. For that camera it produces identical output 
-to Adobe's DNG converter (not bit-wise but metadata), including decoding the 
+While this will happily convert most raw formats, it is especially optimised
+for Sony's A7 (ILCE-7) camera. For that camera it produces identical output
+to Adobe's DNG converter (not bit-wise but metadata), including decoding the
 build-in lens correction profiles, etc.
 
 **Compile:** `cmake`, `make`, `make install`
@@ -15,3 +15,4 @@ build-in lens correction profiles, etc.
  - libexpat
  - libjpeg
  - zlib
+
