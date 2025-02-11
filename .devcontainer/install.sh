@@ -1,12 +1,19 @@
 #!/bin/bash
 # SPDX-License-Identifier: GPL-2.0-or-later
-# Copyright (C) 2023 Christian Ege <ch@ege.io>
+# Copyright (C) 2025 Christian Ege <ch@ege.io>
+
+# Determine if sudo is needed
+if [ "$(id -u)" -eq 0 ]; then
+    SUDO=""
+else
+    SUDO="sudo"
+fi
 
 # Update package list and upgrade all packages
-sudo apt-get update && sudo apt-get upgrade -y
+$SUDO apt-get update && $SUDO apt-get upgrade -y
 
 # Install common packages
-sudo apt-get install -y \
+$SUDO apt-get install -y \
     build-essential \
     cmake \
     git \
@@ -23,4 +30,4 @@ sudo apt-get install -y \
     libjpeg-dev
 
 # Clean up
-sudo apt-get clean
+$SUDO apt-get clean
