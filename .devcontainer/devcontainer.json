@@ -1,0 +1,24 @@
+{
+	"image": "ghcr.io/graugans/cpp",
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {
+				"terminal.integrated.shell.linux": "/bin/bash",
+			  },
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"ms-python.python",
+				"ms-vscode.cpptools-themes",
+				"ms-vscode.cmake-tools",
+				"ms-vscode.cpptools",
+				"ms-vscode.cpptools-extension-pack",
+				"streetsidesoftware.code-spell-checker",
+				"streetsidesoftware.code-spell-checker-british-english"
+			]
+		}
+	},
+	// Add a post-create command to run the install script
+    "postCreateCommand": ".devcontainer/install.sh"
+}

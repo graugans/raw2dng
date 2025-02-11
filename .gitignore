@@ -1,2 +1,55 @@
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
 
-raw2dng/config.h
+# Build directories
+build/
+bin/
+lib/
+
+# Compiled object files
+*.o
+*.obj
+*.lo
+*.la
+*.al
+*.libs
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Static Analysis
+.clangd/
+.clang-tidy
+.clang-format
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*~
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Other
+*.log
+*.tmp
+*.bak
+*.old
+*.orig
+*.rej
+*.swo
+*.swn
+*.DS_Store
